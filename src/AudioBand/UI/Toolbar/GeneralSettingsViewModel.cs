@@ -62,6 +62,16 @@ namespace AudioBand.UI
         }
 
         /// <summary>
+        /// Gets or sets the background gradient color.
+        /// </summary>
+        [TrackState]
+        public Color BackgroundGradientColor
+        {
+            get => _model.BackgroundGradientColor;
+            set => SetProperty(_model, nameof(_model.BackgroundGradientColor), value);
+        }
+
+        /// <summary>
         /// Gets the dialog service.
         /// </summary>
         public IDialogService DialogService { get; }

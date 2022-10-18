@@ -175,6 +175,19 @@
         <Canvas.Resources>
             <audioband:BindingProxy x:Key="DataContextProxy" Value="{Binding .}" />
         </Canvas.Resources>
+        <!-- Using style here so DataBindings work on the Gradients -->
+        <Canvas.Style>
+            <Style TargetType="{x:Type Canvas}" BasedOn="{StaticResource GeneralSettingsView}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Color="{Binding BackgroundColor}" Offset="0" />
+                            <GradientStop Color="{Binding BackgroundGradientColor}" Offset="1" />
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Canvas.Style>
         <Viewbox x:Name="AlbumArt"
                  Width="{Binding Width}"
                  Height="{Binding Height}"

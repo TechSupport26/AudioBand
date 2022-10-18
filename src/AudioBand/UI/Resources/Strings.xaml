@@ -46,6 +46,7 @@
     <sys:String x:Key="BackgroundColorSectionText">Background Colors</sys:String>
     <sys:String x:Key="OtherSectionText">Other</sys:String>
     <sys:String x:Key="BackgroundColorDescription">Background color</sys:String>
+    <sys:String x:Key="BackgroundGradientColorDescription">Background gradient color</sys:String>
     <sys:String x:Key="PositionAnchorDescription">Change the relative positioning of the control</sys:String>
     <sys:String x:Key="ToggleSwitchOnText">Enabled</sys:String>
     <sys:String x:Key="ToggleSwitchOffText">Disabled</sys:String>

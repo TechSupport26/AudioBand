@@ -18,10 +18,22 @@
             <metro:NumericUpDown audioband:NumericInput.Type="Size" Value="{Binding Width, Mode=TwoWay}" />
             <TextBlock Style="{StaticResource DescriptionTextBlock}" Text="{StaticResource HeightLabelText}" />
             <metro:NumericUpDown audioband:NumericInput.Type="Size" Value="{Binding Height, Mode=TwoWay}" />
-            <audioband:ColorPicker Title="{StaticResource BackgroundColorDescription}"
-                                   DialogService="{Binding DialogService}"
-                                   Color="{Binding BackgroundColor}" />
-
+            <TextBlock Margin="{StaticResource SectionMargin}"
+                       Style="{StaticResource TitleTextBlock}"
+                       Text="{StaticResource ProgressBarColorsSectionText}" />
+            <UniformGrid Columns="2"
+                         Rows="1"
+                         Width="510"
+                         Style="{StaticResource ArrangementGridStyle}">
+                <audioband:ColorPicker Margin="0,5,5,0"
+                                       Title="{StaticResource BackgroundColorDescription}"
+                                       DialogService="{Binding DialogService}"
+                                       Color="{Binding BackgroundColor}" />
+                <audioband:ColorPicker Margin="5,5,0,0"
+                                       Title="{StaticResource BackgroundGradientColorDescription}"
+                                       DialogService="{Binding DialogService}"
+                                       Color="{Binding BackgroundGradientColor}" />
+            </UniformGrid>
             <TextBlock Margin="{StaticResource SectionMargin}"
                        Style="{StaticResource TitleTextBlock}"
                        Text="{StaticResource OtherSectionText}" />
