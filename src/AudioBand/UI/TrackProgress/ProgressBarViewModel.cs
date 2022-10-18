@@ -68,6 +68,16 @@ namespace AudioBand.UI
         }
 
         /// <summary>
+        /// Gets or sets the background gradient color.
+        /// </summary>
+        [TrackState]
+        public Color BackgroundGradientColor
+        {
+            get => Model.BackgroundGradientColor;
+            set => SetProperty(Model, nameof(Model.BackgroundGradientColor), value);
+        }
+
+        /// <summary>
         /// Gets or sets the hover color.
         /// </summary>
         [TrackState]

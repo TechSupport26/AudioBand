@@ -490,6 +490,14 @@
                             </LinearGradientBrush>
                         </Setter.Value>
                     </Setter>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush>
+                                <GradientStop Color="{Binding BackgroundColor}" Offset="0" />
+                                <GradientStop Color="{Binding BackgroundGradientColor}" Offset="1" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
                 </Style>
             </Slider.Style>
         </Slider>
