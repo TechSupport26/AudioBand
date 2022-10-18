@@ -36,7 +36,7 @@ namespace AudioBand.Models
         /// <summary>
         /// Gets or sets the right hand side background color.
         /// </summary>
-        public Color BackgroundGradientColor { get; set; } = Colors.DarkGray;
+        public Color BackgroundGradientColor { get; set; } = Colors.DimGray;
 
         /// <summary>
         /// Gets or sets the hover color.
